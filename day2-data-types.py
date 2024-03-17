@@ -1,10 +1,10 @@
 #TIP CALCULATOR AS A FINAL PROJECT
-bill = input("Welcome to the tip calculator!\nWhat was the total bill? $")
-tip = input("How much tip would you like to give? 10, 12 or 15? ")
-split = input("How may people to split the bill? ")
-result = (float(bill) / int(split))*(1 + int(tip)/100)
-print(f"Each person should pay: ${round(result,2)}.")
-
+bill = float(input("Welcome to the tip calculator!\nWhat was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12 or 15? "))
+split = int(input("How may people to split the bill? "))
+#result = (bill / split) * (1 + tip / 100)
+result = (bill + (bill * tip / 100)) / split
+print(f'Each person should pay: ${"{:.2f}".format(result)}.')  #format instead of round to avoid issues with 0 in the end
 #----------------------------------------------------------------------
 # ## Data Types
 # # String
