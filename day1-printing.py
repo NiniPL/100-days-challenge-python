@@ -1,8 +1,9 @@
-# a = "Welcome to the Band Name Generator"
-# b = print("What's name of the city you grew up in?")
-# city = input()
-# pet = input("What's your pet's name?\n")
-# print("Your band name is:\n"+ city + " " + pet)
+# Band name generator  AS A FINAL PROJECT
+a = "Welcome to the Band Name Generator"
+b = print("What's name of the city you grew up in?")
+city = input()
+pet = input("What's your pet's name?\n")
+print("Your band name is:\n"+ city + " " + pet)
 
 #-----------------------------------
 # # Print Modifiers & String manipulation
